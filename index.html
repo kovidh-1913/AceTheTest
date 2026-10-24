@@ -1,34 +1,104 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="A student-friendly library of competitive exam question explanations and original solutions for JEE, NEET and mathematics olympiads.">
-<meta name="robots" content="index,follow"><title>ExamSolve Library | PYQs & Step-by-Step Solutions</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="A competitive exam question library with previous-year questions and step-by-step solutions for JEE, NEET and mathematics olympiads.">
+<meta name="robots" content="index,follow">
+<title>ExamSolve Library | PYQs &amp; Step-by-Step Solutions</title>
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<header><div class="brand"><a href="index.html">ExamSolve<span style="color:var(--accent)">.</span></a></div>
-<nav aria-label="Main navigation"><a href="index.html#exams">Exams</a><a href="index.html#solutions">Solutions</a></nav></header>
-<main>
-<section class="hero"><div class="eyebrow">Learn the method, not just the answer</div>
-<h1>Previous-year questions.<br>Clearly explained.</h1>
-<p class="muted">A growing study library with carefully checked answers, original step-by-step explanations, and topic-wise practice for competitive exams.</p>
-<div class="actions"><a class="btn" href="#exams">Browse exams</a><a class="btn secondary" href="#solutions">View sample solution</a></div></section>
-<section id="exams"><h2>Choose your exam</h2><p class="section-intro">These cards open their own pages. New questions can be added to each exam page.</p>
-<div class="grid">
-<a class="card" href="jee.html"><h3>JEE Main &amp; Advanced →</h3><p>Physics, Chemistry and Mathematics.</p><span class="tag">Engineering</span></a>
-<a class="card" href="neet.html"><h3>NEET →</h3><p>Physics, Chemistry and Biology.</p><span class="tag">Medical</span></a>
-<a class="card" href="ioqm.html"><h3>IOQM / PRMO →</h3><p>Number theory, combinatorics, geometry and algebra.</p><span class="tag">Olympiad maths</span></a>
-<a class="card" href="rmo-inmo.html"><h3>RMO / INMO →</h3><p>Detailed proof-based mathematical solutions.</p><span class="tag">Olympiad maths</span></a>
-<a class="card" href="other-exams.html"><h3>Other competitions →</h3><p>Add other olympiads and competitions here.</p><span class="tag">More exams</span></a>
-</div></section>
-<section id="solutions"><h2>Sample solution</h2><p class="section-intro">A demonstration of how solutions will appear. This is not a PYQ.</p>
-<article class="card solution"><span class="tag">Sample · Algebra</span><h3>Solve 3x + 5 = 20</h3>
-<p><strong>Question:</strong> Find x.</p><details><summary>Show step-by-step solution</summary><p>Subtract 5 from both sides: 3x = 15.</p><p>Divide both sides by 3: <strong>x = 5.</strong></p><p>Check: 3(5) + 5 = 20, so the answer is correct.</p></details></article></section>
-<section><div class="notice">Questions will be added gradually. Each entry should identify its exam, year, paper and question number, and use an original explanation. Prefer linking to official question papers instead of copying commercial solution books.</div></section>
-</main>
-<footer><p>© 2026 ExamSolve Library · Built for learning</p>
-<p><a href="index.html">Home</a><a href="index.html#exams">All exams</a></p>
-<p class="small">Independent study resource; not affiliated with exam authorities.</p></footer>
 
-</body></html>
+<header>
+    <div class="brand">
+        <a href="index.html">ExamSolve<span style="color:var(--accent)">.</span></a>
+    </div>
+    <nav aria-label="Main navigation">
+        <a href="#exams">Exams</a>
+    </nav>
+</header>
+
+<main>
+
+<section class="hero">
+    <div class="eyebrow">Learn the method, not just the answer</div>
+    <h1>Previous-year questions.<br>Clearly explained.</h1>
+    <p class="muted">
+        A growing study library featuring competitive exam questions,
+        carefully checked answers, step-by-step explanations and
+        topic-wise practice.
+    </p>
+    <div class="actions">
+        <a class="btn" href="#exams">Browse exams</a>
+    </div>
+</section>
+
+<section id="exams">
+    <h2>Choose your exam</h2>
+    <p class="section-intro">
+        Select an exam to explore its questions and solutions.
+    </p>
+
+    <div class="grid">
+
+        <a class="card" href="jee.html">
+            <h3>JEE Main &amp; Advanced →</h3>
+            <p>Physics, Chemistry and Mathematics.</p>
+            <span class="tag">Engineering</span>
+        </a>
+
+        <a class="card" href="neet.html">
+            <h3>NEET →</h3>
+            <p>Physics, Chemistry and Biology.</p>
+            <span class="tag">Medical</span>
+        </a>
+
+        <a class="card" href="ioqm.html">
+            <h3>IOQM / PRMO →</h3>
+            <p>Number theory, combinatorics, geometry and algebra.</p>
+            <span class="tag">Olympiad Maths</span>
+        </a>
+
+        <a class="card" href="rmo-inmo.html">
+            <h3>RMO / INMO →</h3>
+            <p>Detailed, proof-based mathematical solutions.</p>
+            <span class="tag">Olympiad Maths</span>
+        </a>
+
+        <a class="card" href="other-exams.html">
+            <h3>Other Competitions →</h3>
+            <p>Explore questions from other olympiads and competitions.</p>
+            <span class="tag">More Exams</span>
+        </a>
+
+    </div>
+</section>
+
+<section>
+    <div class="notice">
+        Explore exam-wise questions and solutions. Each question should
+        identify its examination, year, paper and question number.
+        Solutions should provide clear reasoning and step-by-step
+        explanations, with references to official question papers
+        wherever available.
+    </div>
+</section>
+
+</main>
+
+<footer>
+    <p>© 2026 ExamSolve Library · Built for learning</p>
+    <p>
+        <a href="index.html">Home</a>
+        <a href="#exams">All Exams</a>
+    </p>
+    <p class="small">
+        Independent study resource; not affiliated with exam authorities.
+    </p>
+</footer>
+
+</body>
+</html>
+```
