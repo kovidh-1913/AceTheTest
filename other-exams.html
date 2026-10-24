@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Original explanations and question references for Other competitions.">
+<meta name="robots" content="index,follow"><title>Other competitions | ExamSolve</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header><div class="brand"><a href="index.html">ExamSolve<span style="color:var(--accent)">.</span></a></div>
+<nav aria-label="Main navigation"><a href="index.html#exams">Exams</a><a href="index.html#solutions">Solutions</a></nav></header>
+<main><section class="hero"><div class="eyebrow">More competitive exams</div><h1>Other competitions</h1>
+<p class="muted">Use this page for additional olympiads and competitions. Find question references and original step-by-step explanations here as the library grows.</p>
+<div class="actions"><a class="btn secondary" href="index.html#exams">← All exams</a></div></section>
+<section><h2>Find a solution</h2><p class="section-intro">Search the entries on this page by topic or question.</p>
+<div class="search-row"><input type="search" id="searchBox" placeholder="Search this page..." aria-label="Search this page"></div>
+<article class="card solution searchable" data-search="sample template other use this page for additional olympiads and competitions">
+<span class="tag">Starter template</span><h3>First question entry</h3>
+<p><strong>Exam / year:</strong> Add the exact exam and year.</p><p><strong>Paper / question number:</strong> Add the verified reference.</p>
+<p><strong>Topic:</strong> Add the chapter or concept.</p>
+<details><summary>Show solution</summary><p>Write an original, step-by-step explanation here. Include the reasoning, intermediate steps and a check of the final answer.</p></details>
+<p class="small">This is a content template, not a real past-paper question.</p></article>
+<p id="noResults" class="small" hidden>No matching entries. Try a different search term.</p></section>
+<section><div class="notice">Accuracy matters: verify the question and answer against a reliable paper or source before publishing. Use your own explanation and link to the official paper where possible.</div></section></main>
+<footer><p>© 2026 ExamSolve Library · Built for learning</p>
+<p><a href="index.html">Home</a><a href="index.html#exams">All exams</a></p>
+<p class="small">Independent study resource; not affiliated with exam authorities.</p></footer>
+<script>
+const searchBox=document.getElementById('searchBox');
+const entries=[...document.querySelectorAll('.searchable')];
+const noResults=document.getElementById('noResults');
+searchBox.addEventListener('input',()=>{const q=searchBox.value.trim().toLowerCase();let count=0;
+entries.forEach(e=>{const match=(e.innerText+' '+(e.dataset.search||'')).toLowerCase().includes(q);e.hidden=!match;if(match)count++;});
+noResults.hidden=count!==0;});
+</script>
+</body></html>
